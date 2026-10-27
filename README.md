@@ -1,16 +1,86 @@
-# React + Vite
+# Pomodoro Timer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A productivity web application built with **React** and **JavaScript**, using the Pomodoro technique to help users organize their work sessions and breaks.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The Pomodoro technique is a time-management method that divides work into focused intervals separated by short breaks. This project explores building an interactive web application with React and modern frontend development tools.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** — Component-based user interface
+- **JavaScript** — Application logic
+- **Vite** — Development server and build tooling
+- **HTML & CSS** — Structure and styling
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+Make sure you have [Node.js](https://nodejs.org/) and npm installed.
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/aloui-adem/react_1.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd react_1
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the local URL displayed in your terminal.
+
+## Available Scripts
+
+- `npm run dev` — Start the development server.
+- `npm run build` — Build the application for production.
+- `npm run preview` — Preview the production build locally.
+- `npm run lint` — Run ESLint to check code quality.
+
+## Project Structure
+
+```text
+react_1/
+├── public/       # Static assets
+├── src/          # React application source code
+├── index.html    # HTML entry point
+├── package.json  # Dependencies and scripts
+└── vite.config.js
+```
+
+*The exact files and extensions may vary depending on the project configuration.*
+
+## Future Improvements
+
+Potential enhancements include:
+- Configurable work and break durations
+- Clear timer controls and session indicators
+- Progress tracking for completed sessions
+- Responsive design for desktop and mobile devices
+
+## Author
+
+**Adem Aloui**
+
+- GitHub: [@aloui-adem](https://github.com/aloui-adem)
+
+---
+
+This project was created as part of my journey in software engineering and frontend development.
