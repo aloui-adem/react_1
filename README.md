@@ -1,124 +1,150 @@
-# Cast IA
+<div align="center">
 
-**Plateforme d'aide à la présélection des candidats pour les castings.**
+<!-- HERO BANNER -->
+<img src="docs/assets/banner.png" alt="Spider Casting — El 3ankabout Banner" width="100%" />
 
-![Statut](https://img.shields.io/badge/Statut-Prototype%20en%20d%C3%A9veloppement-orange)
-![Backend](https://img.shields.io/badge/Django-5.2-092E20?logo=django&logoColor=white)
-![Frontend](https://img.shields.io/badge/React-19-20232A?logo=react&logoColor=61DAFB)
-![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)
+<br/>
 
-> **État du prototype :** L'architecture backend (authentification, profils, scénarios, modèles d'auditions et d'évaluations) est en place. L'interface React illustre le parcours produit avec des **données de démonstration fictives** : l'analyse automatique et le classement Top 15 réel sont en cours de développement.
+<!-- ANIMATED TYPING HEADER -->
+<a href="[https://github.com/ismailkrid957-dot/spider-el-3ankabout](https://github.com/ismailkrid957-dot/spider-el-3ankabout)">
+  <img src="[https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3200&pause=900&color=38BDF8&center=true&vCenter=true&multiline=true&repeat=true&width=780&height=85&lines=%F0%9F%95%B7%EF%B8%8F+SPIDER+CASTING+(El+3ankabout);IA+%C3%89thique+360+%E2%80%A2+JEI+INSAT+%C3%97+OIF+(Mandat+2026%2F2027](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3200&pause=900&color=38BDF8&center=true&vCenter=true&multiline=true&repeat=true&width=780&height=85&lines=%F0%9F%95%B7%EF%B8%8F+SPIDER+CASTING+(El+3ankabout);IA+%C3%89thique+360+%E2%80%A2+JEI+INSAT+%C3%97+OIF+(Mandat+2026%2F2027))" alt="Spider Casting Typing Animation" />
+</a>
 
----
+<p align="center">
+  <strong>Tisser une toile d'évaluation objective, transparente et inclusive pour réinventer le casting artistique.</strong>
+</p>
 
-## Présentation
+<!-- BADGES -->
+<p align="center">
+  <img src="[https://img.shields.io/badge/Hackathon-IA_%C3%89thique_360-10B981?style=for-the-badge&logo=sparkles&logoColor=white](https://img.shields.io/badge/Hackathon-IA_%C3%89thique_360-10B981?style=for-the-badge&logo=sparkles&logoColor=white)" alt="Hackathon IA Éthique 360"/>
+  <img src="[https://img.shields.io/badge/JEI_INSAT_%C3%97_OIF-Mandat_2026%2F2027-0284C7?style=for-the-badge&logo=globe&logoColor=white](https://img.shields.io/badge/JEI_INSAT_%C3%97_OIF-Mandat_2026%2F2027-0284C7?style=for-the-badge&logo=globe&logoColor=white)" alt="JEI INSAT x OIF"/>
+  <img src="[https://img.shields.io/badge/Django-5.2.19-092E20?style=for-the-badge&logo=django&logoColor=white](https://img.shields.io/badge/Django-5.2.19-092E20?style=for-the-badge&logo=django&logoColor=white)" alt="Django 5.2"/>
+  <img src="[https://img.shields.io/badge/React-Vite-61DAFB?style=for-the-badge&logo=react&logoColor=black](https://img.shields.io/badge/React-Vite-61DAFB?style=for-the-badge&logo=react&logoColor=black)" alt="React Vite"/>
+  <img src="[https://img.shields.io/badge/Celery_%2B_Redis-Async_AI-DC382D?style=for-the-badge&logo=redis&logoColor=white](https://img.shields.io/badge/Celery_%2B_Redis-Async_AI-DC382D?style=for-the-badge&logo=redis&logoColor=white)" alt="Celery Redis"/>
+</p>
 
-**Cast IA** aide les producteurs et les directeurs de casting à trier un grand volume de candidatures afin d'identifier rapidement les profils les plus pertinents pour chaque rôle.
+<p align="center">
+  <a href="#-démonstration-vidéo">🎬 Démo Vidéo</a> •
+  <a href="#-engagement--ia-éthique-360--jei-insat--oif">⚖️ IA Éthique 360</a> •
+  <a href="#-architecture-technique">🕸️ Architecture</a> •
+  <a href="#-installation-rapide">🚀 Installation</a>
+</p>
 
-L'intelligence artificielle intervient uniquement comme **outil d'aide à la décision** : chaque score a vocation à être explicable, vérifiable, et le producteur conserve systématiquement le choix final.
-
-### Parcours cible
-
-1. **Définition du casting :** Le producteur ou directeur de casting crée un projet, ses rôles et ses critères d'évaluation.
-2. **Dépôt des candidatures :** Les candidats complètent leur profil et soumettent leur audition vidéo pour un rôle.
-3. **Analyse assistée :** Les auditions sont évaluées selon les critères définis pour le rôle.
-4. **Notation explicable :** Chaque candidature reçoit une note accompagnée d'éléments justificatifs.
-5. **Présélection Top 15 :** Cast IA met en avant les **15 candidats les mieux notés** par rôle.
-6. **Validation humaine :** Le producteur visionne les auditions retenues et prend la décision finale.
-
----
-
-## Aperçu de l'interface
-
-| Vue Accueil & Concept | Classement Top 15 par rôle *(aperçu démo)* |
-| :---: | :---: |
-| ![Page d'accueil Cast IA](docs/screenshots/home-preview.png) | ![Classement Top 15 par rôle](docs/screenshots/top15-ranking.png) |
-| *Présentation de la plateforme et accès par profil.* | *Simulation interactive du tri des 15 meilleurs profils.* |
+</div>
 
 ---
 
-## Architecture & Flux de données
+## 🌟 Pourquoi « Spider Casting » (El 3ankabout) ?
+
+Dans l'industrie culturelle et cinématographique, le processus de casting souffre souvent d'opacité, de biais inconscients et d'une surcharge de candidatures qui pénalise les talents émergents — notamment au sein de l'espace francophone.
+
+**Spider Casting (*El 3ankabout*)** agit comme une **toile d'analyse multimodale bienveillante** : plutôt que de réduire un(e) artiste à une boîte noire opaque, notre moteur tisse ensemble des signaux objectifs (expressivité faciale, posture scénique, prosodie vocale) pour générer un **profil radar explicable**, toujours soumis à la validation finale d'un jury humain.
+
+<div align="center">
+  <img src="docs/assets/spider-radar.svg" alt="Animation Radar Éthique Spider Casting" width="90%" />
+</div>
+
+---
+
+## 🎬 Démonstration Vidéo
+
+> 💡 **Aperçu du parcours complet** : dépôt d'une audition vidéo, traitement asynchrone via Celery/Redis, extraction multimodale et restitution du score radar explicable.
+
+<div align="center">
+
+<!-- ASTUCE GITHUB : Pour afficher un lecteur vidéo natif ici, glisse-dépose simplement ton fichier .mp4 directement dans l'éditeur README sur GitHub.com — GitHub générera automatiquement le lien [https://github.com/user-attachments/assets/](https://github.com/user-attachments/assets/)... -->
+
+[![Voir la démonstration Spider Casting](docs/assets/banner.png)](https://github.com/ismailkrid957-dot/spider-el-3ankabout)
+
+*🎥 Cliquez sur la bannière ou glissez votre vidéo `.mp4` de démonstration directement dans cette section sur GitHub.*
+
+</div>
+
+---
+
+## ⚖️ Engagement « IA Éthique 360 » (JEI INSAT × OIF)
+
+Conçu dans le cadre du **Hackathon IA Éthique 360** co-organisé par la **Junior Entreprise INSAT (JEI)** et l'**Organisation Internationale de la Francophonie (OIF)** (*Mandat JEI 2026/2027*), le projet repose sur 4 piliers non négociables :
+
+| Pilier Éthique | Implémentation dans Spider Casting |
+| :--- | :--- |
+| 🔍 **Explicabilité (XAI)** | Aucun score global opaque : chaque évaluation est décomposée par critère artistique (prosodie, expressivité, posture) dans `evaluations`. |
+| 🛡️ **Neutralisation des biais** | Analyse centrée uniquement sur la performance artistique (landmarks géométriques & acoustiques) sans profilage morphologique ou identitaire. |
+| 🤝 **Human-in-the-Loop** | L'IA assiste le tri et met en lumière des talents atypiques ; **la décision de casting reste 100 % humaine**. |
+| 🌍 **Inclusivité Francophone** | Calibration acoustique ouverte à la diversité des accents et expressions culturelles de l'espace francophone (OIF). |
+
+---
+
+## 🕸️ Architecture Technique
+
+Le projet adopte une architecture découplée pensée pour absorber les traitements vidéo/audio lourds sans bloquer l'expérience utilisateur :
 
 ```mermaid
 flowchart LR
-    subgraph Frontend ["Frontend (React 19 + Vite)"]
-        UI_CD["Espace Directeur de Casting\n(Scénarios & Top 15)"]
-        UI_CA["Espace Candidat\n(Profil & Audition)"]
+    subgraph Frontend["🎨 Frontend (React + Vite)"]
+        UI["Interface Candidat & Jury"]
     end
 
-    subgraph Backend ["Backend (Django 5.2 + DRF)"]
-        API["API REST\n(Auth, Profils, Scénarios)"]
-        DB[("SQLite\nDonnées & Évaluations")]
-        QUEUE["Redis\n(File asynchrone — prévu)"]
-        AI["Module IA / librosa\n(Analyse audio — prévu)"]
+    subgraph Backend["⚙️ Backend API (Django 5.2 + DRF)"]
+        APP["applicants"]
+        CAST["casting"]
+        EVAL["evaluations"]
     end
 
-    UI_CD <-->|Axios / JSON| API
-    UI_CA <-->|Axios / JSON| API
-    API <--> DB
-    API -.->|Tâches d'analyse| QUEUE
-    QUEUE -.-> AI
-    AI -.->|Note + explications| DB
+    subgraph Async["⚡ Pipeline Asynchrone"]
+        REDIS[("Redis 8.1 Broker")]
+        CELERY["Celery 5.7 Workers"]
+    end
+
+    subgraph AI["🧠 Moteur IA Multimodal"]
+        MP["MediaPipe\nLandmarks & Posture"]
+        DF["DeepFace\nÉmotions & Expressivité"]
+        LIB["Librosa\nProsodie & Rythme Vocal"]
+    end
+
+    UI <-->|REST API JSON| Backend
+    CAST -->|Déclenche analyse| REDIS
+    REDIS --> CELERY
+    CELERY --> MP
+    CELERY --> DF
+    CELERY --> LIB
+    MP -->|Métriques explicables| EVAL
+    DF -->|Métriques explicables| EVAL
+    LIB -->|Métriques explicables| EVAL
+    EVAL -->|Radar Éthique| UI
 ```
-
-*Les liaisons en pointillés représentent les composants d'analyse asynchrone prévus dans la feuille de route.*
 
 ### Structure du dépôt
 
 ```text
-cast-ia/
+spider-el-3ankabout/
 ├── backend/
-│   ├── ai/                 # Extraction de caractéristiques et analyse des auditions
-│   ├── applicants/         # Gestion des candidats et des auditions
+│   ├── ai/                 # Extraction multimodale (MediaPipe, DeepFace, Librosa)
+│   ├── applicants/         # Profils candidats et dépôt des auditions
 │   ├── casting/            # Projets, scénarios et rôles de casting
-│   ├── evaluations/        # Notes et critères d'évaluation
-│   ├── config/             # Configuration Django et routage principal
+│   ├── evaluations/        # Scores décomposés et critères explicables (XAI)
+│   ├── config/             # Configuration Django, Celery et routage API
 │   ├── manage.py
-│   └── docker-compose.yml  # Service Redis pour les tâches asynchrones
+│   └── docker-compose.yml  # Broker Redis pour les tâches asynchrones
 ├── frontend/
 │   ├── public/
-│   ├── src/                # Composants React, pages et appels API (Axios)
+│   ├── src/                # Composants React, visualisation Radar et client Axios
 │   └── package.json
 ├── docs/
-│   └── screenshots/        # Captures d'écran de l'application
+│   └── assets/             # Bannière, schémas SVG et visuels du README
 ├── .gitignore
 └── README.md
 ```
 
 ---
 
-## Stack technique
-
-| Couche | Technologies | Rôle dans le projet |
-| :--- | :--- | :--- |
-| **Backend** | Python, Django 5.2, Django REST Framework | API REST, authentification, gestion des rôles et modèles métier |
-| **Base de données** | SQLite | Stockage relationnel en développement |
-| **Asynchrone & Audio** | Redis, `librosa` | File de traitement des auditions et extraction de caractéristiques audio *(prévu)* |
-| **Frontend** | React 19, Vite, JavaScript, React Router, Axios | Interface utilisateur et communication avec l'API |
-
----
-
-## Avancement du projet
-
-| Fonctionnalité | Statut | Détails |
-| :--- | :---: | :--- |
-| Authentification & comptes (`directeur de casting` / `candidat`) | ✅ Implémenté | Création automatique du profil à l'inscription |
-| Modèles & API des scénarios de casting | ✅ Implémenté | Lecture authentifiée, création réservée aux directeurs de casting |
-| Modèles de données auditions & évaluations | ✅ Implémenté | Structure initiale avec champ de note globale |
-| Interface de démonstration du Top 15 | 🟡 Maquette | Données fictives côté frontend |
-| Modèle des rôles liés aux castings | ⏳ À développer | Rattachement des auditions et critères à chaque rôle |
-| Upload et lecture des vidéos d'audition | ⏳ À développer | Gestion des fichiers médias via l'API |
-| Analyse automatique (`Redis` + `librosa`) & Top 15 réel | ⏳ À développer | Calcul de scores justifiables et connexion au dashboard producteur |
-
----
-
-## Installation et lancement
+## 🚀 Installation Rapide
 
 ### Prérequis
 
 * **Python** 3.11+
 * **Node.js** 18+ et **npm**
-* **Docker** *(facultatif, uniquement pour lancer Redis)*
+* **Docker** *(pour lancer Redis)*
 
 ### 1. Cloner le dépôt
 
@@ -127,7 +153,7 @@ git clone https://github.com/ismailkrid957-dot/spider-el-3ankabout.git
 cd spider-el-3ankabout
 ```
 
-### 2. Lancer le Backend (`backend/`)
+### 2. Démarrer le Backend & le Worker IA (`backend/`)
 
 ```bash
 cd backend
@@ -152,7 +178,7 @@ cd backend
 pip install -r requirements.txt
 cp .env.example .env
 ```
-*(Sous Windows PowerShell, utilisez `Copy-Item .env.example .env` si `cp` n'est pas disponible.)*
+*(Sous Windows PowerShell, utilisez `Copy-Item .env.example .env`.)*
 
 **Générer une clé secrète Django et l'ajouter dans `.env` :**
 
@@ -160,18 +186,21 @@ cp .env.example .env
 python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
 ```
 
-**Appliquer les migrations et démarrer le serveur :**
+**Lancer Redis, appliquer les migrations et démarrer le serveur :**
 
 ```bash
+docker compose up -d
 python manage.py migrate
 python manage.py runserver
 ```
 
-Le backend est accessible sur **[http://127.0.0.1:8000/](http://127.0.0.1:8000/)**.
+*(Optionnel — dans un autre terminal depuis `backend/` avec `.venv` activé, démarrez le worker Celery : `celery -A config worker -l info`)*
 
-### 3. Lancer le Frontend (`frontend/`)
+Backend disponible sur **[http://127.0.0.1:8000/](http://127.0.0.1:8000/)**.
 
-Dans un second terminal, depuis la racine du projet :
+### 3. Démarrer le Frontend (`frontend/`)
+
+Dans un nouveau terminal, depuis la racine du projet :
 
 ```bash
 cd frontend
@@ -179,18 +208,10 @@ npm install
 npm run dev
 ```
 
-Le frontend est accessible sur **http://localhost:5173/**.
-
-### 4. Lancer Redis *(facultatif)*
-
-Depuis le dossier `backend/` :
-
-```bash
-docker compose up -d
-```
+Frontend disponible sur **http://localhost:5173/**.
 
 ---
 
-## Auteur
+## 👥 Équipe & Cadre
 
-Projet académique et technique — **Cast IA**.
+Projet réalisé dans le cadre du **Hackathon IA Éthique 360** — **Junior Entreprise INSAT (JEI) × Organisation Internationale de la Francophonie (OIF)** (*Mandat 2026/2027*).
