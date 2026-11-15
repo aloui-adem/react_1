@@ -1,15 +1,34 @@
 <div align="center">
 
-# Cast AI
+<!-- ANIMATED HERO BANNER -->
+<img src="docs/assets/banner.svg" alt="Cast AI — Plateforme de présélection artistique" width="100%" />
 
-**Plateforme d'aide à la présélection artistique — objective, explicable et inclusive.**
+<br/>
 
-`Hackathon IA Éthique 360` · `JEI INSAT × OIF • Mandat 2026/2027` · `Django 5.2` · `React + Vite` · `Celery + Redis`
+<!-- ANIMATED TYPING HEADER -->
+<a href="https://github.com/ismailkrid957-dot/spider-el-3ankabout">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3200&pause=900&color=38BDF8&center=true&vCenter=true&multiline=true&repeat=true&width=820&height=80&lines=CAST+AI+%E2%80%94+Pr%C3%A9s%C3%A9lection+Artistique+Assist%C3%A9e+par+IA;IA+%C3%89thique+360+%E2%80%A2+JEI+INSAT+%C3%97+OIF+(Mandat+2026%2F2027)" alt="Cast AI Typing Animation" />
+</a>
 
-[Démonstration Vidéo](#démonstration-vidéo) •
-[Engagement IA Éthique 360](#engagement-ia-éthique-360) •
-[Architecture Technique](#architecture-technique) •
-[Installation Rapide](#installation-rapide)
+<p align="center">
+  <strong>Plateforme d'aide à la présélection artistique — objective, explicable et inclusive.</strong>
+</p>
+
+<!-- BADGES -->
+<p align="center">
+  <img src="https://img.shields.io/badge/Hackathon-IA_%C3%89thique_360-10B981?style=for-the-badge&logo=sparkles&logoColor=white" alt="Hackathon IA Éthique 360"/>
+  <img src="https://img.shields.io/badge/JEI_INSAT_%C3%97_OIF-Mandat_2026%2F2027-0284C7?style=for-the-badge&logo=globe&logoColor=white" alt="JEI INSAT x OIF"/>
+  <img src="https://img.shields.io/badge/Django-5.2-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django 5.2"/>
+  <img src="https://img.shields.io/badge/React-Vite-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React Vite"/>
+  <img src="https://img.shields.io/badge/Celery_%2B_Redis-Async_AI-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="Celery Redis"/>
+</p>
+
+<p align="center">
+  <a href="#démonstration-interactive">Démonstration</a> •
+  <a href="#engagement-ia-éthique-360">IA Éthique 360</a> •
+  <a href="#architecture-technique">Architecture</a> •
+  <a href="#installation-rapide">Installation</a>
+</p>
 
 </div>
 
@@ -21,26 +40,26 @@ Dans les industries culturelle et cinématographique, la présélection des cand
 
 **Cast AI** est une plateforme d'aide à la décision conçue pour les producteurs, directeurs de casting et jurys artistiques. Plutôt que de reposer sur un score global opaque, le moteur combine des indicateurs multimodaux objectifs (expressivité faciale, posture scénique, prosodie vocale, diction et cohérence avec le rôle) afin de générer un **profil d'évaluation radar explicable**, systématiquement soumis à la validation finale d'un jury humain.
 
-```text
-                  Expressivité (DeepFace)
-                             ▲
-                             │
-   Cohérence Rôle     ───────┼───────     Posture (MediaPipe)
-                             │
-   Diction            ───────┼───────     Prosodie (Librosa)
-                             │
-                             ▼
-                  Équité & Auditabilité
-               [Décision finale : Humaine]
-```
+<div align="center">
+  <img src="docs/assets/cast-ai-radar.svg" alt="Cast AI Engine — Radar Éthique 360" width="92%" />
+</div>
 
 ---
 
-## Démonstration Vidéo
+## Démonstration Interactive
 
-> **Aperçu du parcours complet :** dépôt d'une audition vidéo, traitement asynchrone via Celery/Redis, extraction des métriques multimodales et restitution du profil radar explicable.
->
-> *Pour intégrer votre vidéo de démonstration : ouvrez `README.md` en mode édition sur GitHub.com et glissez-déposez votre fichier `.mp4` directement dans cette section — GitHub générera automatiquement un lecteur vidéo natif.*
+> **Parcours complet :** dépôt d'une audition vidéo, traitement asynchrone via Celery/Redis, extraction des métriques multimodales et restitution du profil radar explicable.
+
+<div align="center">
+  <img src="docs/assets/pipeline-flow.svg" alt="Pipeline Asynchrone Cast AI" width="95%" />
+</div>
+
+| Espace Candidat — Dépôt d'audition | Espace Jury — Profil Radar & Top 15 |
+| :---: | :---: |
+| ![Démo Candidat](docs/assets/demo-candidat.gif) | ![Démo Jury](docs/assets/demo-jury.gif) |
+| *Soumission vidéo et suivi du traitement en temps réel.* | *Exploration des scores explicables et validation humaine.* |
+
+> *Astuce GitHub : pour remplacer les emplacements `.gif` ci-dessus par vos captures d'écran animées, ouvrez `README.md` en mode édition sur GitHub.com et glissez-déposez vos fichiers `.gif` ou `.mp4` directement dans l'éditeur.*
 
 ---
 
@@ -112,6 +131,8 @@ spider-el-3ankabout/
 │   ├── public/
 │   ├── src/                # Composants React, visualisation Radar et client Axios
 │   └── package.json
+├── docs/
+│   └── assets/             # Bannière SVG, radar animé, pipeline et GIFs de démo
 ├── .gitignore
 └── README.md
 ```
