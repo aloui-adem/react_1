@@ -1,65 +1,65 @@
 <div align="center">
 
-# 🕷️ Spider Casting *(El 3ankabout)*
+# Cast AI
 
-**Tisser une toile d'évaluation objective, transparente et inclusive pour réinventer le casting artistique.**
+**Plateforme d'aide à la présélection artistique — objective, explicable et inclusive.**
 
 `Hackathon IA Éthique 360` · `JEI INSAT × OIF • Mandat 2026/2027` · `Django 5.2` · `React + Vite` · `Celery + Redis`
 
-[🎬 Démo Vidéo](#-démonstration-vidéo) •
-[⚖️ IA Éthique 360](#-engagement-ia-éthique-360) •
-[🕸️ Architecture](#-architecture-technique) •
-[🚀 Installation](#-installation-rapide)
+[Démonstration Vidéo](#démonstration-vidéo) •
+[Engagement IA Éthique 360](#engagement-ia-éthique-360) •
+[Architecture Technique](#architecture-technique) •
+[Installation Rapide](#installation-rapide)
 
 </div>
 
 ---
 
-## 🌟 Pourquoi « Spider Casting » (El 3ankabout) ?
+## Présentation & Proposition de valeur
 
-Dans l'industrie culturelle et cinématographique, le processus de casting souffre souvent d'opacité, de biais inconscients et d'une surcharge de candidatures qui pénalise les talents émergents — notamment au sein de l'espace francophone.
+Dans les industries culturelle et cinématographique, la présélection des candidatures souffre fréquemment d'un manque de transparence, de biais inconscients et d'une volumétrie élevée qui pénalise les talents émergents — en particulier au sein de l'espace francophone.
 
-**Spider Casting (*El 3ankabout*)** agit comme une **toile d'analyse multimodale bienveillante** : plutôt que de réduire un(e) artiste à une boîte noire opaque, le moteur tisse ensemble des signaux objectifs (expressivité faciale, posture scénique, prosodie vocale) pour générer un **profil radar explicable**, toujours soumis à la validation finale d'un jury humain.
+**Cast AI** est une plateforme d'aide à la décision conçue pour les producteurs, directeurs de casting et jurys artistiques. Plutôt que de reposer sur un score global opaque, le moteur combine des indicateurs multimodaux objectifs (expressivité faciale, posture scénique, prosodie vocale, diction et cohérence avec le rôle) afin de générer un **profil d'évaluation radar explicable**, systématiquement soumis à la validation finale d'un jury humain.
 
 ```text
-                    Expressivité Faciale (DeepFace)
-                                 ▲
-                                 │  84%
-                                 │
-   Prosodie Vocale ◄─────────────┼─────────────► Posture Scénique
-      (Librosa)         78%      │      81%        (MediaPipe)
-                                 │
-                                 ▼
-                    Cohérence Scénario / Rôle
-                     [Décision finale : Jury]
+                  Expressivité (DeepFace)
+                             ▲
+                             │
+   Cohérence Rôle     ───────┼───────     Posture (MediaPipe)
+                             │
+   Diction            ───────┼───────     Prosodie (Librosa)
+                             │
+                             ▼
+                  Équité & Auditabilité
+               [Décision finale : Humaine]
 ```
 
 ---
 
-## 🎬 Démonstration Vidéo
+## Démonstration Vidéo
 
-> 💡 **Parcours complet :** dépôt d'une audition vidéo, traitement asynchrone via Celery/Redis, extraction multimodale et restitution du score radar explicable.
+> **Aperçu du parcours complet :** dépôt d'une audition vidéo, traitement asynchrone via Celery/Redis, extraction des métriques multimodales et restitution du profil radar explicable.
 >
-> *Pour intégrer votre vidéo de démonstration : ouvrez `README.md` en mode édition sur GitHub.com et glissez-déposez votre fichier `.mp4` directement ici — GitHub générera automatiquement un lecteur vidéo natif.*
+> *Pour intégrer votre vidéo de démonstration : ouvrez `README.md` en mode édition sur GitHub.com et glissez-déposez votre fichier `.mp4` directement dans cette section — GitHub générera automatiquement un lecteur vidéo natif.*
 
 ---
 
-## ⚖️ Engagement IA Éthique 360
+## Engagement IA Éthique 360
 
-Conçu dans le cadre du **Hackathon IA Éthique 360** co-organisé par la **Junior Entreprise INSAT (JEI)** et l'**Organisation Internationale de la Francophonie (OIF)** (*Mandat JEI 2026/2027*), le projet repose sur 4 piliers non négociables :
+Conçu dans le cadre du **Hackathon IA Éthique 360** co-organisé par la **Junior Entreprise INSAT (JEI)** et l'**Organisation Internationale de la Francophonie (OIF)** (*Mandat JEI 2026/2027*), **Cast AI** repose sur quatre principes fondamentaux :
 
-| Pilier Éthique | Implémentation dans Spider Casting |
+| Pilier Éthique | Implémentation dans Cast AI |
 | :--- | :--- |
-| 🔍 **Explicabilité (XAI)** | Aucun score global opaque : chaque évaluation est décomposée par critère artistique (prosodie, expressivité, posture) dans `evaluations`. |
-| 🛡️ **Neutralisation des biais** | Analyse centrée uniquement sur la performance artistique (landmarks géométriques & acoustiques) sans profilage morphologique ou identitaire. |
-| 🤝 **Human-in-the-Loop** | L'IA assiste le tri et met en lumière des talents atypiques ; **la décision de casting reste 100 % humaine**. |
-| 🌍 **Inclusivité Francophone** | Calibration acoustique ouverte à la diversité des accents et expressions culturelles de l'espace francophone (OIF). |
+| **Explicabilité (XAI)** | Aucun score global opaque : chaque évaluation est décomposée par critère artistique (prosodie, expressivité, posture, diction, cohérence) dans `evaluations`. |
+| **Neutralisation des biais** | Analyse centrée exclusivement sur la performance artistique (repères géométriques et acoustiques) sans profilage morphologique ou identitaire. |
+| **Supervision humaine (*Human-in-the-Loop*)** | L'IA assiste le tri initial et met en lumière des profils atypiques ; **la décision finale de casting reste 100 % humaine**. |
+| **Inclusivité francophone** | Calibration acoustique ouverte à la diversité des accents et expressions culturelles de l'espace francophone (OIF). |
 
 ---
 
-## 🕸️ Architecture Technique
+## Architecture Technique
 
-Le projet adopte une architecture découplée pensée pour absorber les traitements vidéo/audio lourds sans bloquer l'expérience utilisateur :
+La plateforme adopte une architecture découplée pensée pour absorber les traitements vidéo et audio lourds de manière asynchrone sans dégrader la réactivité de l'interface :
 
 ```mermaid
 flowchart LR
@@ -118,13 +118,13 @@ spider-el-3ankabout/
 
 ---
 
-## 🚀 Installation Rapide
+## Installation Rapide
 
 ### Prérequis
 
 * **Python** 3.11+
 * **Node.js** 18+ et **npm**
-* **Docker** *(pour lancer Redis)*
+* **Docker** *(pour l'exécution de Redis)*
 
 ### 1. Cloner le dépôt
 
@@ -152,7 +152,7 @@ cd backend
   source .venv/bin/activate
   ```
 
-**Installer les dépendances et configurer l'environnement :**
+**Installer les dépendances et configurer les variables d'environnement :**
 
 ```bash
 pip install -r requirements.txt
@@ -166,7 +166,7 @@ cp .env.example .env
 python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
 ```
 
-**Lancer Redis, appliquer les migrations et démarrer le serveur :**
+**Démarrer Redis, appliquer les migrations et lancer le serveur :**
 
 ```bash
 docker compose up -d
@@ -176,7 +176,7 @@ python manage.py runserver
 
 *(Optionnel — dans un second terminal depuis `backend/` avec `.venv` activé, démarrez le worker Celery : `celery -A config worker -l info`)*
 
-Backend disponible sur **http://127.0.0.1:8000/**.
+API Backend accessible sur **http://127.0.0.1:8000/**.
 
 ### 3. Démarrer le Frontend (`frontend/`)
 
@@ -188,10 +188,10 @@ npm install
 npm run dev
 ```
 
-Frontend disponible sur **http://localhost:5173/**.
+Application Frontend accessible sur **http://localhost:5173/**.
 
 ---
 
-## 👥 Équipe & Cadre
+## Cadre du projet
 
-Projet réalisé dans le cadre du **Hackathon IA Éthique 360** — **Junior Entreprise INSAT (JEI) × Organisation Internationale de la Francophonie (OIF)** (*Mandat 2026/2027*).
+Projet développé dans le cadre du **Hackathon IA Éthique 360** — **Junior Entreprise INSAT (JEI) × Organisation Internationale de la Francophonie (OIF)** (*Mandat 2026/2027*).
