@@ -59,7 +59,7 @@ flowchart LR
     API -.->|Tâches d'analyse| QUEUE
     QUEUE -.-> AI
     AI -.->|Note + explications| DB
-# Cast IA
+
 
 **Plateforme d'aide à la présélection des candidats pour les castings.**
 
