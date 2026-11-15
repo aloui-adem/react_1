@@ -107,4 +107,90 @@ cast-ia/
 | Modèles de données auditions & évaluations | ✅ Implémenté | Structure initiale avec champ de note globale |
 | Interface de démonstration du Top 15 | 🟡 Maquette | Données fictives côté frontend |
 | Modèle des rôles liés aux castings | ⏳ À développer | Rattachement des auditions et critères à chaque rôle |
-|
+| Upload et lecture des vidéos d'audition | ⏳ À développer | Gestion des fichiers médias via l'API |
+| Analyse automatique (`Redis` + `librosa`) & Top 15 réel | ⏳ À développer | Calcul de scores justifiables et connexion au dashboard producteur |
+
+---
+
+## Installation et lancement
+
+### Prérequis
+
+* **Python** 3.11+
+* **Node.js** 18+ et **npm**
+* **Docker** *(facultatif, uniquement pour lancer Redis)*
+
+### 1. Cloner le dépôt
+
+```bash
+git clone https://github.com/ismailkrid957-dot/spider-el-3ankabout.git
+cd spider-el-3ankabout
+```
+
+### 2. Lancer le Backend (`backend/`)
+
+```bash
+cd backend
+```
+
+**Créer et activer l'environnement virtuel :**
+
+* **Windows (PowerShell) :**
+  ```powershell
+  python -m venv .venv
+  .\.venv\Scripts\Activate.ps1
+  ```
+* **Linux / macOS :**
+  ```bash
+  python3 -m venv .venv
+  source .venv/bin/activate
+  ```
+
+**Installer les dépendances et configurer l'environnement :**
+
+```bash
+pip install -r requirements.txt
+cp .env.example .env
+```
+*(Sous Windows PowerShell, utilisez `Copy-Item .env.example .env` si `cp` n'est pas disponible.)*
+
+**Générer une clé secrète Django et l'ajouter dans `.env` :**
+
+```bash
+python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
+```
+
+**Appliquer les migrations et démarrer le serveur :**
+
+```bash
+python manage.py migrate
+python manage.py runserver
+```
+
+Le backend est accessible sur **[http://127.0.0.1:8000/](http://127.0.0.1:8000/)**.
+
+### 3. Lancer le Frontend (`frontend/`)
+
+Dans un second terminal, depuis la racine du projet :
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Le frontend est accessible sur **http://localhost:5173/**.
+
+### 4. Lancer Redis *(facultatif)*
+
+Depuis le dossier `backend/` :
+
+```bash
+docker compose up -d
+```
+
+---
+
+## Auteur
+
+Projet académique et technique — **Cast IA**.
