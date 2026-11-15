@@ -7,7 +7,7 @@
 
 <!-- ANIMATED TYPING HEADER -->
 <a href="https://github.com/ismailkrid957-dot/spider-el-3ankabout">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3200&pause=900&color=38BDF8&center=true&vCenter=true&multiline=true&repeat=true&width=820&height=80&lines=CAST+AI+%E2%80%94+Pr%C3%A9s%C3%A9lection+Artistique+Assist%C3%A9e+par+IA;IA+%C3%89thique+360+%E2%80%A2+JEI+INSAT+%C3%97+OIF+(Mandat+2026%2F2027)" alt="Cast AI Typing Animation" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3200&pause=900&color=818CF8&center=true&vCenter=true&multiline=true&repeat=true&width=820&height=80&lines=CAST+AI+%E2%80%94+Pr%C3%A9s%C3%A9lection+Artistique+Assist%C3%A9e+par+IA;IA+%C3%89thique+360+%E2%80%A2+JEI+INSAT+%C3%97+OIF+(Mandat+2026%2F2027)" alt="Cast AI Typing Animation" />
 </a>
 
 <p align="center">
@@ -16,11 +16,11 @@
 
 <!-- BADGES -->
 <p align="center">
-  <img src="https://img.shields.io/badge/Hackathon-IA_%C3%89thique_360-10B981?style=for-the-badge&logo=sparkles&logoColor=white" alt="Hackathon IA Éthique 360"/>
-  <img src="https://img.shields.io/badge/JEI_INSAT_%C3%97_OIF-Mandat_2026%2F2027-0284C7?style=for-the-badge&logo=globe&logoColor=white" alt="JEI INSAT x OIF"/>
-  <img src="https://img.shields.io/badge/Django-5.2-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django 5.2"/>
-  <img src="https://img.shields.io/badge/React-Vite-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React Vite"/>
-  <img src="https://img.shields.io/badge/Celery_%2B_Redis-Async_AI-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="Celery Redis"/>
+  <img src="https://img.shields.io/badge/Hackathon-IA_%C3%89thique_360-6366F1?style=for-the-badge&logo=sparkles&logoColor=white" alt="Hackathon IA Éthique 360"/>
+  <img src="https://img.shields.io/badge/JEI_INSAT_%C3%97_OIF-Mandat_2026%2F2027-D97706?style=for-the-badge&logo=globe&logoColor=white" alt="JEI INSAT x OIF"/>
+  <img src="https://img.shields.io/badge/Django-5.2-1E1B4B?style=for-the-badge&logo=django&logoColor=white" alt="Django 5.2"/>
+  <img src="https://img.shields.io/badge/React-Vite-4F46E5?style=for-the-badge&logo=react&logoColor=white" alt="React Vite"/>
+  <img src="https://img.shields.io/badge/Celery_%2B_Redis-Async_AI-F59E0B?style=for-the-badge&logo=redis&logoColor=black" alt="Celery Redis"/>
 </p>
 
 <p align="center">
@@ -81,6 +81,7 @@ Conçu dans le cadre du **Hackathon IA Éthique 360** co-organisé par la **Juni
 La plateforme adopte une architecture découplée pensée pour absorber les traitements vidéo et audio lourds de manière asynchrone sans dégrader la réactivité de l'interface :
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#1E1B4B', 'primaryTextColor': '#F8FAFC', 'primaryBorderColor': '#818CF8', 'lineColor': '#F59E0B', 'clusterBkg': '#131626', 'clusterBorder': '#4F46E5', 'titleColor': '#FBBF24'}}}%%
 flowchart LR
     subgraph Frontend["Frontend (React + Vite)"]
         UI["Interface Candidat & Jury"]
@@ -143,9 +144,9 @@ spider-el-3ankabout/
 
 ### Prérequis
 
-* **Python** 3.11+
-* **Node.js** 18+ et **npm**
-* **Docker** *(pour l'exécution de Redis)*
+- **Python** 3.11+
+- **Node.js** 18+ et **npm**
+- **Docker** *(pour l'exécution de Redis)*
 
 ### 1. Cloner le dépôt
 
@@ -162,12 +163,12 @@ cd backend
 
 **Créer et activer l'environnement virtuel :**
 
-* **Windows (PowerShell) :**
+- **Windows (PowerShell) :**
   ```powershell
   python -m venv .venv
   .\.venv\Scripts\Activate.ps1
   ```
-* **Linux / macOS :**
+- **Linux / macOS :**
   ```bash
   python3 -m venv .venv
   source .venv/bin/activate
